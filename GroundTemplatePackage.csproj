@@ -1,20 +1,22 @@
 ﻿<Project Sdk="Microsoft.NET.Sdk">
 	<PropertyGroup>
 		<PackageType>Template</PackageType>
-		<PackageVersion>1.0.8</PackageVersion>
+		<PackageVersion>2.0.0</PackageVersion>
 		<PackageId>Ground.Solution.Templates</PackageId>
 		<Title>Ground Solution Templates</Title>
 		<Authors>Abbas Vosoughi</Authors>
 		<Description>Templates to use when creating an application utilizing the Ground framework.</Description>
 		<PackageTags>dotnet-new;templates;contoso</PackageTags>
-		<TargetFramework>net7.0</TargetFramework>
+		<TargetFramework>net8.0</TargetFramework>
 		<PackageIcon>Icon.png</PackageIcon>
 
 		<IncludeContentInPack>true</IncludeContentInPack>
 		<IncludeBuildOutput>false</IncludeBuildOutput>
 		<ContentTargetFolders>content</ContentTargetFolders>
-		<PackageReadmeFile>readme.md</PackageReadmeFile>
-		<PackageLicenseFile>LICENSE.txt</PackageLicenseFile>
+		<PackageReadmeFile>README.md</PackageReadmeFile>
+		<PackageLicenseFile>LICENSE</PackageLicenseFile>
+		<PackageProjectUrl>https://github.com/vosooghi/GroundTemplatePackage</PackageProjectUrl>
+		<RepositoryUrl>https://github.com/vosooghi/GroundTemplatePackage</RepositoryUrl>
 
 	</PropertyGroup>
 
@@ -25,6 +27,10 @@
 	</ItemGroup>
 
 	<ItemGroup>
+	  <None Update="LICENSE">
+	    <Pack>True</Pack>
+	    <PackagePath>\</PackagePath>
+	  </None>
 	  <None Update="LICENSE.txt">
 	    <Pack>True</Pack>
 	    <PackagePath>\</PackagePath>
