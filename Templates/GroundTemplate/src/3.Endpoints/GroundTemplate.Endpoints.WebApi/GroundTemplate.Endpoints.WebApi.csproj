@@ -1,0 +1,51 @@
+﻿<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <PropertyGroup>
+    <TargetFramework>net8.0</TargetFramework>
+    <Nullable>enable</Nullable>
+    <ImplicitUsings>enable</ImplicitUsings>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <None Remove="Program.cs~RFa96dd7.TMP" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Ground.Endpoints.WebApi" Version="2.0.0" />
+    <PackageReference Include="Ground.Extensions.Caching.InMemory" Version="2.0.0" />
+    <PackageReference Include="Ground.Extensions.Events.PollingPublisher" Version="2.0.0" />
+    <PackageReference Include="Ground.Extensions.Events.PollingPublisher.Dal.Dapper" Version="2.0.0" />
+    <PackageReference Include="Ground.Extensions.MessageBus.MessageInbox" Version="2.0.0" />
+    <PackageReference Include="Ground.Extensions.MessageBus.MessageInbox.Dal.Dapper" Version="2.0.0" />
+    <PackageReference Include="Ground.Extensions.ObjectMappers.AutoMapper" Version="2.0.0" />
+    <PackageReference Include="Ground.Extensions.Serializers.NewtonSoft" Version="2.0.0" />
+    <PackageReference Include="Ground.Extensions.Translations.Trani" Version="2.0.1" />
+    <PackageReference Include="Ground.Extensions.UsersManagement" Version="2.0.0" />
+    <PackageReference Include="Ground.Utilities.SerilogRegistration" Version="2.0.0" />
+    <PackageReference Include="Microsoft.AspNetCore.Authentication.JwtBearer" Version="8.0.3" />
+    <PackageReference Include="Microsoft.AspNetCore.OpenApi" Version="8.0.3" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore.Design" Version="8.0.3">
+      <PrivateAssets>all</PrivateAssets>
+      <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+    </PackageReference>
+    <PackageReference Include="Microsoft.EntityFrameworkCore.Tools" Version="8.0.3">
+      <PrivateAssets>all</PrivateAssets>
+      <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+    </PackageReference>
+    <PackageReference Include="Microsoft.Extensions.Diagnostics.HealthChecks.EntityFrameworkCore" Version="8.0.3" />
+    <PackageReference Include="Swashbuckle.AspNetCore" Version="6.5.0" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\..\1.Core\GroundTemplate.Core.ApplicationServices\GroundTemplate.Core.ApplicationServices.csproj" />
+    <ProjectReference Include="..\..\1.Core\GroundTemplate.Core.Contracts\GroundTemplate.Core.Contracts.csproj" />
+    <ProjectReference Include="..\..\1.Core\GroundTemplate.Core.Domain\GroundTemplate.Core.Domain.csproj" />
+    <ProjectReference Include="..\..\2.Infra\Data\GroundTemplate.Infra.Data.Sql.Commands\GroundTemplate.Infra.Data.Sql.Commands.csproj" />
+    <ProjectReference Include="..\..\2.Infra\Data\GroundTemplate.Infra.Data.Sql.Queries\GroundTemplate.Infra.Data.Sql.Queries.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Folder Include="Controllers\" />
+  </ItemGroup>
+
+</Project>
